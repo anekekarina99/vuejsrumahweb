@@ -1,5 +1,6 @@
 <template>
     <div class="pagination-container">
+      <h1>Post Pagination</h1>
       <ul class="post-list">
         <li v-for="post in paginatedPosts" :key="post.id">{{ post.title }}</li>
       </ul>
