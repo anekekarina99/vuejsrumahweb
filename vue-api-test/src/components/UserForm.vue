@@ -1,6 +1,6 @@
 <template>
     <form @submit.prevent="submitForm" class="contact-form">
-      <h1>User Form</h1>
+      <h2>User Form</h2>
       <label for="name">Nama:</label>
       <input id="name" v-model="form.name" required placeholder="Masukkan nama Anda" />
   

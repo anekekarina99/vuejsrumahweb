@@ -1,6 +1,6 @@
 <template>
     <div class="user-list">
-      <h1>Fetch Api List</h1>
+      <h2>Fetch Api List</h2>
       <p v-if="loading" class="loading">Memuat data...</p>
       <p v-if="error" class="error">{{ error }}</p>
   
