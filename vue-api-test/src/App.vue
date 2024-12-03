@@ -2,8 +2,8 @@
   <div class="app-container">
     <h1 class="app-title">Vue 3 Test App</h1>
     <div class="content">
-      <UserList />
-      <UserForm />
+      <User List />
+      <User Form />
       <PostPagination />
       <LoginForm />
     </div>
@@ -36,7 +36,7 @@ import LoginForm from './components/LoginForm.vue';
 .content {
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Ubah minmax untuk ukuran yang lebih kecil */
   padding: 10px;
 }
 
@@ -68,9 +68,9 @@ input, textarea {
   font-size: 1rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .app-title {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   button {
@@ -80,6 +80,40 @@ input, textarea {
 
   input, textarea {
     padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-title {
+    font-size: 2rem;
+  }
+
+  .content {
+    grid-template-columns: 1fr; /* Satu kolom pada perangkat kecil */
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+
+  input, textarea {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-title {
+    font-size: 1.8rem;
+  }
+
+  button {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+
+  input, textarea {
+    padding: 6px;
   }
 }
 </style>
